@@ -8,8 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="/is-triangle.html"><strong>Is Triangle?</strong></a>
+        <a href="/quiz.html">Quiz</a>
+        <a href="/hypotenuse.html">Hypotenuse</a>
+        <a href="/area.html">Area</a>
+    </nav>
+    <header>
+        <h1>Is Triangle?</h1>
+    </header>
+
+    <main class="container">
+        <label for="angel1">Angle 1 (in degrees)</label>
+        <input type="number" class="angle-input" min=1 step=any>
+        <label for="angel2">Angle 2 (in degrees)</label>
+        <input type="number" class="angle-input" min=1 step=any>
+        <label for="angel3">Angle 3 (in degrees)</label>
+        <input type="number" class="angle-input" min=1 step=any>
+
+        <button id="is-triangle-btn" disabled>Is Triangle?</button>
+        <h1 class="output"></h1>
+    </main>
     
 
-    <script src="index.js"></script>
+
+    <footer class="footer">
+        <h3 class="footer-heading">©|2021|Vishnu Aithal</h3>
+        <div class="container-footer-links">
+            <a target="_blank" href="https://github.com/Vishnu-Aithal" title="GitHub" class="links github"><img src="/footer/github.svg" alt="" class="svg icons"></a>
+            <a target="_blank" href="https://twitter.com/Vishnu_Aithal" title="Twitter" class="links twitter"><img src="/footer/twitter.svg" alt="" class="svg icons"></a>
+            <a target="_blank" href="" title="Linkedin" class="links linkedin"><img src="/footer/linkedin.svg" alt="" class="svg icons"></a>
+            <a target="_blank" href="https://vishnu-aithal.netlify.app" title="Portfolio" class="links twitter"><img src="/footer/portfolio.svg" alt="" class="svg icons"></a>
+        </div>
+    </footer>
+    
+    <script src="is-triangle.js"></script>
 </body>
 </html>
