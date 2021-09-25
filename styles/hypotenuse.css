@@ -29,5 +29,5 @@ button{
     width: 60vw;
     margin:auto;
     color: var(--secondary-color);
-    padding:0.5rem;
+    padding:1rem;
 }
