@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #222831;
+    --secondary-color: #00ADB5;
+    --text: #393E46;
+    --off-white: #F3F4F6;
+    --svg-secondary-filter: invert(51%) sepia(67%) saturate(2685%) hue-rotate(147deg) brightness(93%) contrast(101%);
+}
+
+.question{
+ border: solid 2px var(--primary-color);
+ width: 70vw;
+ margin:1rem auto;
+ border-radius: 0.5rem;
+ text-align: left;
+ padding: 0 1rem 0.5rem;
+}

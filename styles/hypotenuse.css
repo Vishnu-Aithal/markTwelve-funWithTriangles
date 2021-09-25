@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #222831;
+    --secondary-color: #00ADB5;
+    --text: #393E46;
+    --off-white: #F3F4F6;
+    --svg-secondary-filter: invert(51%) sepia(67%) saturate(2685%) hue-rotate(147deg) brightness(93%) contrast(101%);
+}
+
+input,
+button {
+    display: block;
+    margin: 1rem auto;
+    border: solid 3px var(--secondary-color);
+    width: 60vw;
+    height: 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: large;
+}
+button{
+    width:auto;
+    height:auto;
+    padding:0.5rem 1rem;
+}
+.output{
+    display:none;
+    border: solid 3px var(--primary-color);
+    border-radius: 2rem;
+    width: 60vw;
+    margin:auto;
+    color: var(--secondary-color);
+    padding:0.5rem;
+}
