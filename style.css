@@ -31,34 +31,6 @@ nav a strong {
     text-decoration: underline;
 }
 
-input,
-button,
-.output {
-    display: block;
-    margin: auto;
-    border: solid 3px var(--secondary-color);
-    border-radius: 0.3rem;
-    margin: 1rem auto 2rem;
-    width: 40vw;
-    height: 2rem;
-    font-size: large;
-    font-weight: bold;
-}
-button{
-    width:auto;
-    height: auto;
-    padding: 0.5rem 2rem;
-}
-.output{
-    height: auto;
-    font-size: xx-large;
-    display:none;
-    padding: 1rem;
-    border:solid 4px var(--primary-color);
-    border-radius: 3rem;
-    color: var(--secondary-color);
-}
-
 footer {
     margin: 3rem auto 0;
     max-width: 90vw;
