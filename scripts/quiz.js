@@ -1,6 +1,9 @@
 var quizForm = document.querySelector("form");
 var checkBtn = document.querySelector(".check-btn");
 var output = document.querySelector(".output")
+var inputs = document.querySelectorAll("input");
+
+inputs.forEach((input)=>input.oninput = ()=>output.style.display = "none")
 
 var answers = {
     Q1: "90°",
