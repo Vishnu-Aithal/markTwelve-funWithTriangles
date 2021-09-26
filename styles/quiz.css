@@ -38,12 +38,12 @@ button {
 
 .output {
     height: auto;
-    font-size: xx-large;
+    font-size: x-large;
     display: none;
-    width: 40vw;
+    width: 70vw;
     margin: 1rem auto;
     padding: 1rem;
-    border: solid 4px var(--primary-color);
+    border: solid 2px var(--primary-color);
     border-radius: 3rem;
     color: var(--secondary-color);
 }
