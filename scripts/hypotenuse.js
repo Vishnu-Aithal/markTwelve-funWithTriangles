@@ -37,7 +37,7 @@ function calcHypotenuse () {
     }
     var hypotenuse = Math.sqrt(sumOfSquares);
     output.style.display = "block";
-    output.innerText = `The Hypotenuse side is ${hypotenuse.toFixed(2)}`;
+    output.innerText = `The Hypotenuse side is ${hypotenuse.toFixed(2)} units`;
 
 }
 

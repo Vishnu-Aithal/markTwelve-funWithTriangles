@@ -31,7 +31,7 @@ function calcArea () {
     var sides =[];
     sidesInput.forEach((side) => sides.push(Number(side.value)));
     var area = 1/2*(sides[0]*sides[1]);
-    output.innerHTML = `The Area of Triangle is ${area}`;
+    output.innerHTML = `The Area of Triangle is ${area} units²`;
     output.style.display = "block";
 
 }
