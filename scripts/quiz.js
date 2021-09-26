@@ -16,7 +16,7 @@ function checkAnswers(){
     var userAnswers = new FormData(quizForm);
     var score = 0;
     for([Q , A] of userAnswers.entries()){
-        if(answers.Q = A){
+        if(answers.Q === A){
             score++;
         }
     }
