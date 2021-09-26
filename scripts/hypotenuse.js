@@ -13,6 +13,7 @@ sidesInput.forEach((side) => {
             }
         } else {
             event.target.value = "";
+            calcHypotenuseBtn.disabled = true;
         }
     }
 })
