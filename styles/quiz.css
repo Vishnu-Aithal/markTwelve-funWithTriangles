@@ -35,3 +35,15 @@ button {
     font-weight: bold;
     border-radius: 0.4rem;
 }
+
+.output {
+    height: auto;
+    font-size: xx-large;
+    display: none;
+    width: 40vw;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: solid 4px var(--primary-color);
+    border-radius: 3rem;
+    color: var(--secondary-color);
+}

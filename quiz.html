@@ -17,7 +17,7 @@
     </nav>
 
     <main class="container">
-    <form action="" class="question-container">
+    <form action="" class="quiz-form">
 
         <div class="question">
             <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
@@ -28,47 +28,50 @@
         
         <div class="question">
             <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-            <div><input type="radio" name="Q1" value="obtuse">Obtuse</div>
-            <div><input type="radio" name="Q1" value="acute">Acute</div>
-            <div><input type="radio" name="Q1" value="right angled">Right angled</div>
+            <div><input type="radio" name="Q2" value="obtuse">Obtuse</div>
+            <div><input type="radio" name="Q2" value="acute">Acute</div>
+            <div><input type="radio" name="Q2" value="right angled">Right angled</div>
         </div> 
 
         <div class="question">
             <p>How many Dimensions does a Triangle have</p>
-            <div><input type="radio" name="Q2" value="1">1</div>
-            <div><input type="radio" name="Q2" value="2">2</div>
-            <div><input type="radio" name="Q2" value="3">3</div>
+            <div><input type="radio" name="Q3" value="1">1</div>
+            <div><input type="radio" name="Q3" value="2">2</div>
+            <div><input type="radio" name="Q3" value="3">3</div>
         </div> 
 
         <div class="question">
             <p>What type of shape is a triangle</p>
-            <div><input type="radio" name="Q3" value="rhombus">Rhombus</div>
-            <div><input type="radio" name="Q3" value="trigon">Trigon</div>
-            <div><input type="radio" name="Q3" value="hexagon">Hexagon</div>
+            <div><input type="radio" name="Q4" value="rhombus">Rhombus</div>
+            <div><input type="radio" name="Q4" value="trigon">Trigon</div>
+            <div><input type="radio" name="Q4" value="hexagon">Hexagon</div>
         </div> 
 
         <div class="question">
             <p>Type of maths that studies the sides and angles of triangle</p>
-            <div><input type="radio" name="Q4" value="geometry">Geometry</div>
-            <div><input type="radio" name="Q4" value="trianglometry">Trianglometry</div>
-            <div><input type="radio" name="Q4" value="trigonometry">Trigonometry</div>
+            <div><input type="radio" name="Q5" value="geometry">Geometry</div>
+            <div><input type="radio" name="Q5" value="trianglometry">Trianglometry</div>
+            <div><input type="radio" name="Q5" value="trigonometry">Trigonometry</div>
         </div> 
 
         <div class="question">
             <p>A Triangle with all three angles less than 90°</p>
-            <div><input type="radio" name="Q5" value="obstuse">Obtuse</div>
-            <div><input type="radio" name="Q5" value="acute">Acute</div>
-            <div><input type="radio" name="Q5" value="scalene">Scalene</div>
+            <div><input type="radio" name="Q6" value="obstuse">Obtuse</div>
+            <div><input type="radio" name="Q6" value="acute">Acute</div>
+            <div><input type="radio" name="Q6" value="scalene">Scalene</div>
         </div> 
 
         <div class="question">
             <p>A Triangle having atleast two sides equal </p>
-            <div><input type="radio" name="Q6" value="equilateral triangle">Equilateral triangle</div>
-            <div><input type="radio" name="Q6" value="isosceles triangle">Isosceles triangle</div>
-            <div><input type="radio" name="Q6" value="obtuse triangle">Obtuse triangle</div>
+            <div><input type="radio" name="Q7" value="equilateral triangle">Equilateral triangle</div>
+            <div><input type="radio" name="Q7" value="isosceles triangle">Isosceles triangle</div>
+            <div><input type="radio" name="Q7" value="obtuse triangle">Obtuse triangle</div>
         </div> 
     </form>
-    <button class="submit-btn">Check Answers</button>
+
+    <button class="check-btn">Check Answers</button>
+    <h2 class="output"></h2>
+
     </main>
     
     <footer class="footer">
@@ -80,5 +83,6 @@
             <a target="_blank" href="https://vishnu-aithal.netlify.app" title="Portfolio" class="links twitter"><img src="/footer/portfolio.svg" alt="" class="svg icons"></a>
         </div>
     </footer>
+    <script src="/scripts/quiz.js"></script>
 </body>
 </html>
