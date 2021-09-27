@@ -6,21 +6,22 @@ anglesInput.forEach((angle) => {
     angle.oninput = (event) => {
         output.style.display = "none";
         if ((event.target.validity.valid)) {
+            event.target.previousValidInput = event.target.value;
             if (allInputsEntered()) {
                 isTrianglebtn.disabled = false;
             } else {
                 isTrianglebtn.disabled = true;
             }
         } else {
-            event.target.value = "";
+            event.target.value = event.target.previousValidInput;
         }
     }
 })
 
 function allInputsEntered() {
     var entries = []
-    anglesInput.forEach((angle) => entries.push(angle.value));
-    if (entries.includes("")) {
+    anglesInput.forEach((angle) => entries.push(Number(angle.value)));
+    if (entries.includes(0)) {
         return false;
     }
     return true;

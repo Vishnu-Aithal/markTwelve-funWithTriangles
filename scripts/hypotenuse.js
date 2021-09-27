@@ -6,22 +6,23 @@ sidesInput.forEach((side) => {
     side.oninput = (event) => {
         output.style.display = "none";
         if ((event.target.validity.valid)) {
+            event.target.previousValidInput = event.target.value;
             if (allInputsEntered()) {
                 calcHypotenuseBtn.disabled = false;
             } else {
                 calcHypotenuseBtn.disabled = true;
             }
         } else {
-            event.target.value = "";
-            calcHypotenuseBtn.disabled = true;
+            event.target.value = event.target.previousValidInput;
+            // calcHypotenuseBtn.disabled = true;
         }
     }
 })
 
 function allInputsEntered() {
     var entries = []
-    sidesInput.forEach((side) => entries.push(side.value));
-    if (entries.includes("")) {
+    sidesInput.forEach((side) => entries.push(Number(side.value)));
+    if (entries.includes(0)) {
         return false;
     }
     return true;
