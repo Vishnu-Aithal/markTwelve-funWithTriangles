@@ -1,9 +1,15 @@
 var quizForm = document.querySelector("form");
 var checkBtn = document.querySelector(".check-btn");
+var clearBtn = document.querySelector(".clear-btn")
 var output = document.querySelector(".output")
 var inputs = document.querySelectorAll("input");
 
-inputs.forEach((input)=>input.oninput = ()=>output.style.display = "none")
+inputs.forEach((input)=>input.oninput = ()=>{
+    output.style.display = "none";
+    checkBtn.disabled = false;
+    clearBtn.disabled = false;
+
+})
 
 var answers = {
     Q1: "90°",
@@ -35,4 +41,15 @@ function checkAnswers() {
     }
 }
 
+
+
+function clearAll() {
+    inputs.forEach((input)=>input.checked = false)
+    clearBtn.disabled = true;
+    checkBtn.disabled = true;
+    output.style.display = "none";
+
+}
+
 checkBtn.addEventListener("click", checkAnswers)
+clearBtn.addEventListener("click", clearAll)

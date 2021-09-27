@@ -28,12 +28,17 @@
 }
 
 button {
+    display:block;
+    margin:1rem auto;
     border: solid 2px var(--primary-color);
     background-color: var(--secondary-color);
     padding:0.5rem 2rem;
     font-size: large;
     font-weight: bold;
     border-radius: 0.4rem;
+}
+button:disabled{
+    background-color: white;
 }
 
 .output {
