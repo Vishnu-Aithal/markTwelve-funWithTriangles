@@ -21,6 +21,11 @@ button{
     width:auto;
     height:auto;
     padding:0.5rem 1rem;
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+button:disabled{
+    background-color: white;
 }
 .output{
     display:none;
