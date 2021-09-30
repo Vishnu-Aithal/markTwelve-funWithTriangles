@@ -11,9 +11,10 @@ button {
     display: block;
     margin: 1rem auto;
     border: solid 3px var(--secondary-color);
-    width: 60vw;
+    width: 400px;
+    max-width: 80vw;
     height: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     font-weight: bold;
     font-size: large;
 }
