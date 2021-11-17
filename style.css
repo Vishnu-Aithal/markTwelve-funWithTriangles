@@ -27,6 +27,11 @@ nav a {
     padding: 1rem;
 }
 
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
 nav a strong {
     text-decoration: underline;
 }

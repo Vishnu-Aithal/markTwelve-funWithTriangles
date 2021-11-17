@@ -38,6 +38,13 @@ button {
     font-size: large;
     font-weight: bold;
     border-radius: 0.4rem;
+    transition: ease 0.2s;
+}
+button:enabled:hover{
+    border-color: var(--secondary-color);
+    box-shadow: 1px 1px var(--text);
+    cursor: pointer;
+    transition: ease 0.2s;
 }
 button:disabled{
     background-color: white;

@@ -24,6 +24,13 @@ button{
     padding:0.5rem 1rem;
     background-color: var(--secondary-color);
     border-color: var(--primary-color);
+    transition: ease 0.2s;
+}
+button:enabled:hover{
+    border-color: var(--secondary-color);
+    box-shadow: 1px 1px var(--text);
+    cursor: pointer;
+    transition: ease 0.2s;
 }
 button:disabled{
     background-color: white;
